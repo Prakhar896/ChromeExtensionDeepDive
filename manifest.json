@@ -1,0 +1,12 @@
+{
+    "name": "Omnibox Extension",
+    "version": "0.0.1",
+    "description": "An example extension that uses the omnibox API.",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "serviceWorker.js"
+    },
+    "omnibox": {
+        "keyword": "rz"
+    }
+}
