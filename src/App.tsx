@@ -9,7 +9,7 @@ function App() {
         chrome.scripting.executeScript({
             target: { tabId: tab.id! },
             func: () => {
-                alert('Hello from your Chrome extension!')
+                document.body.style.backgroundColor = 'red';
             }
         });
     }
