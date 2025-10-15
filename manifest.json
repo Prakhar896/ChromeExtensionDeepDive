@@ -1,12 +1,22 @@
 {
-    "name": "Omnibox Extension",
-    "version": "0.0.1",
-    "description": "An example extension that uses the omnibox API.",
     "manifest_version": 3,
-    "background": {
-        "service_worker": "serviceWorker.js"
+    "name": "My Extension",
+    "version": "1.0",
+    "icons": {
+        "32": "icon32.png"
     },
-    "omnibox": {
-        "keyword": "rz"
-    }
+    "background": {
+        "service_worker": "service-worker.js",
+        "type": "module"
+    },
+    "action": {
+
+    },
+    "permissions": [
+        "scripting"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ]
 }
